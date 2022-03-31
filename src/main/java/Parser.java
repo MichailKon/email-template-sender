@@ -23,7 +23,7 @@ public class Parser {
                 number += 1;
             } else {
                 row += 1;
-                List<String> l = List.of(line.split(": "));
+                List<String> l = List.of(line.split(": ", 2));
                 if (l.size() != 2) {
                     System.out.println("Bad line in batch " + number + " in row " + row);
                     System.exit(1);

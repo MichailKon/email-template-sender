@@ -135,7 +135,7 @@ buildNumber.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/maven,java,intellij+iml
 
-fillings.txt
-credentials.json
-template.txt
+fillings.*
+credentials.*
+template.*
 .idea

@@ -44,7 +44,6 @@ public class Main implements Callable<Integer> {
         Map<String, String> res = new Parser().parse(template, fillings);
 
         JSONObject credentials = new JSONObject(String.join("\n", Files.readAllLines(credentialsFile)));
-        System.out.println(credentials);
         new Sender().sendMails(res,
                 String.valueOf(credentials.get("name")), String.valueOf(credentials.get("password")));
         return 0;

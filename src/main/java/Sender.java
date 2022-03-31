@@ -20,8 +20,6 @@ public class Sender {
             }
         });
 
-        System.out.println(session);
-
         for (Map.Entry<String, String> entry : data.entrySet()) {
             String email = entry.getKey();
             String msg = entry.getValue();
